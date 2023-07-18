@@ -36,8 +36,8 @@ nav {
 .cart div {
     position: absolute;
     background-color: red;
-    right: 0;
-    top: 0;
+    right: -25%;
+    top: -15%;
 
 }
 
@@ -56,6 +56,7 @@ nav {
 
 #logo {
     width: 120px;
+    margin-top: -10px;
 
 }
 
@@ -67,31 +68,44 @@ nav {
 }
 
 .categories-dropdown {
-    position: relative;
+
     display: flex;
-    align-items: center;
+    align-items: end;
     list-style: none;
 
 }
 
+#hombre {
+    padding-bottom: 34px;
+}
+
 .dropdown {
 
+    position: absolute;
+    display: flex;
+    width: 80vw;
+    justify-content: space-around;
+    transition: opacity 0.2s ease;
+    z-index: -1;
+    margin: 0 auto;
+    opacity: 0;
+    top: 9rem;
+    left: 0;
+    right: 0;
 
-    display: none;
 }
+
+
 
 .dropdown ul {
     list-style: none;
 }
 
-.categories-dropdown:hover .dropdown {
-    position: absolute;
-    bottom: -100%;
-    width: 80vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
 
+
+.categories-dropdown:hover .dropdown {
+    opacity: 1;
+    z-index: 1;
 
 }
 
@@ -111,11 +125,12 @@ nav {
     display: flex;
     align-items: center;
     border: 1px solid black;
-    width: 251px;
-    height: 29px;
+    width: 149px;
     justify-content: space-between;
     padding: 10px;
     color: #c2c2c2;
+    font-size: 12px;
+
 
 }
 
