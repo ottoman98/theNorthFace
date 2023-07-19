@@ -1,0 +1,14 @@
+#buy-now {
+    display: flex;
+    padding-top: 90px;
+    gap: 1.5rem;
+}
+
+#buy-now img {
+    width: 100%;
+}
+
+#buy-now img:hover {
+    opacity: 0.8;
+    transition: 0.5s;
+}

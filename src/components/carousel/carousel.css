@@ -1,0 +1,36 @@
+#carousel {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+
+
+
+
+
+}
+
+.carousel-img {
+    width: 100vw;
+}
+
+#buttons {
+    position: absolute;
+    display: flex;
+    left: 46%;
+    margin-top: -12px;
+    gap: 10px;
+
+}
+
+.carousel-button {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 100%;
+
+}
+
+.carousel-button:target {
+    background-color: red;
+}
