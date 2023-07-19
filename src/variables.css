@@ -1,0 +1,12 @@
+:root {
+    /*fonts*/
+    --font-nav: 'Courier New', Courier, monospace;
+
+    /*font-colors*/
+
+    --font-color-gray: #3d3d3c;
+    --font-color-red: #ec3025;
+    /*background colors*/
+
+    --white-transparent: rgba(255, 255, 255, 0.95);
+}

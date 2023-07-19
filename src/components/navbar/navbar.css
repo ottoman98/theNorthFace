@@ -1,3 +1,5 @@
+@import url("../../variables.css");
+
 nav {
 
     display: flex;
@@ -36,6 +38,8 @@ nav {
 .cart div {
     position: absolute;
     background-color: red;
+    color: white;
+    padding: 0 2px;
     right: -25%;
     top: -15%;
 
@@ -52,6 +56,8 @@ nav {
 .nav-left {
     display: flex;
     gap: 20px;
+
+    width: 100%;
 }
 
 #logo {
@@ -63,9 +69,12 @@ nav {
 .nav-categories {
     display: flex;
     list-style: none;
-    gap: 1vw;
+    justify-content: space-around;
+    gap: 1.5rem;
 
 }
+
+
 
 .categories-dropdown {
 
@@ -73,10 +82,18 @@ nav {
     align-items: end;
     list-style: none;
 
+
 }
 
-#hombre {
+.categories-dropdown:hover>.category {
+    color: var(--font-color-red);
+
+}
+
+.category {
     padding-bottom: 34px;
+    font-weight: 900;
+    font-family: var(--font-nav);
 }
 
 .dropdown {
@@ -84,7 +101,6 @@ nav {
     position: absolute;
     display: flex;
     width: 80vw;
-    justify-content: space-around;
     transition: opacity 0.2s ease;
     z-index: -1;
     margin: 0 auto;
@@ -92,6 +108,11 @@ nav {
     top: 9rem;
     left: 0;
     right: 0;
+    background-color: var(--white-transparent);
+    gap: 4rem;
+    padding: 20px;
+    justify-content: space-between;
+
 
 }
 
@@ -99,6 +120,26 @@ nav {
 
 .dropdown ul {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.dropdown ul li {
+    color: var(--font-color-gray);
+    font-size: 11px;
+}
+
+
+
+.bold-sub-category b {
+    font-family: var(--font-nav);
+    font-weight: bold;
+    padding: 20px 0;
+    color: black;
+    font-size: 14px;
+
 }
 
 
@@ -126,15 +167,20 @@ nav {
     align-items: center;
     border: 1px solid black;
     width: 149px;
+    height: 10px;
     justify-content: space-between;
     padding: 10px;
     color: #c2c2c2;
     font-size: 12px;
+    font-weight: 800;
+    font-family: var(--font-nav);
+    margin-bottom: -12px;
 
 
 }
 
 .search-input img {
+
     width: 14px;
 
 }

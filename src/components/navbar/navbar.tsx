@@ -6,7 +6,7 @@ import cart from "../../images/shopping-cart.png";
 import search from "../../images/search.png";
 
 function NavBar() {
-  const cartItems = 22;
+  const cartItems = 0;
   return (
     <>
       <nav>
@@ -32,11 +32,11 @@ function NavBar() {
             </li>
             <ul className="nav-categories">
               <ul className="categories-dropdown">
-                <li id="hombre">HOMBRE</li>
+                <li className="category">HOMBRE</li>
 
                 <div className="dropdown">
                   <ul>
-                    <li>
+                    <li className="bold-sub-category">
                       <b>PRODUCTOS DESTACADOS</b>
                     </li>
                     <li>NUEVA COLECCIÓN</li>
@@ -45,7 +45,7 @@ function NavBar() {
                     <li>SALE & ÚLTIMAS UNIDADES</li>
                   </ul>
                   <ul>
-                    <li>
+                    <li className="bold-sub-category">
                       <b>CHAQUETAS Y CHALECOS</b>
                     </li>
                     <li>3 EN 1</li>
@@ -57,7 +57,7 @@ function NavBar() {
                     <li>CHALECOS</li>
                   </ul>
                   <ul>
-                    <li>
+                    <li className="bold-sub-category">
                       <b>ROPA</b>
                     </li>
                     <li>BUZOS</li>
@@ -68,7 +68,7 @@ function NavBar() {
                     <li>PRENDAS BÁSICAS</li>
                   </ul>
                   <ul>
-                    <li>
+                    <li className="bold-sub-category">
                       <b>ZAPATOS</b>
                     </li>
                     <li>BOTAS</li>
@@ -78,7 +78,7 @@ function NavBar() {
                     <li>CHANCLAS & SANDALIAS</li>
                   </ul>
                   <ul>
-                    <li>
+                    <li className="bold-sub-category">
                       <b>ACCESORIOS</b>
                     </li>
                     <li>GORRAS Y GORROS</li>
@@ -92,20 +92,20 @@ function NavBar() {
               {/* mujer*/}
 
               <ul className="categories-dropdown">
-                <li id="hombre">HOMBRE</li>
+                <li className="category">MUJER</li>
 
                 <div className="dropdown">
                   <ul>
-                    <li>
+                    <li className="bold-sub-category">
                       <b>PRODUCTOS DESTACADOS</b>
                     </li>
-                    <li>NUEVA COLECCIÓN</li>
-                    <li>THERMOBALL</li>
-                    <li>VECTIV</li>
+                    <li className="category-topic">NUEVA COLECCIÓN</li>
+                    <li className="category-topic">THERMOBALL</li>
+                    <li className="category-topic">VECTIV</li>
                     <li>SALE & ÚLTIMAS UNIDADES</li>
                   </ul>
                   <ul>
-                    <li>
+                    <li className="bold-sub-category">
                       <b>CHAQUETAS Y CHALECOS</b>
                     </li>
                     <li>3 EN 1</li>
@@ -113,22 +113,21 @@ function NavBar() {
                     <li>IMPERMEABLES</li>
                     <li>POLAR</li>
                     <li>ROMPEVIENTOS</li>
-                    <li>SOFTSHELLS</li>
                     <li>CHALECOS</li>
                   </ul>
                   <ul>
-                    <li>
+                    <li className="bold-sub-category">
                       <b>ROPA</b>
                     </li>
                     <li>BUZOS</li>
-                    <li>CAMISAS Y POLOS</li>
                     <li>CAMISETAS</li>
                     <li>PANTALONES</li>
                     <li>PANTALONETAS</li>
                     <li>PRENDAS BÁSICAS</li>
+                    <li>TOPS DEPORTIVOS</li>
                   </ul>
                   <ul>
-                    <li>
+                    <li className="bold-sub-category">
                       <b>ZAPATOS</b>
                     </li>
                     <li>BOTAS</li>
@@ -138,7 +137,7 @@ function NavBar() {
                     <li>CHANCLAS & SANDALIAS</li>
                   </ul>
                   <ul>
-                    <li>
+                    <li className="bold-sub-category">
                       <b>ACCESORIOS</b>
                     </li>
                     <li>GORRAS Y GORROS</li>
@@ -147,6 +146,106 @@ function NavBar() {
                     <li>BOLSOS Y RIÑONERAS</li>
                   </ul>
                 </div>
+              </ul>
+              {/* niños*/}
+
+              <ul className="categories-dropdown">
+                <li className="category">NIÑOS</li>
+
+                <div className="dropdown">
+                  <ul>
+                    <li className="bold-sub-category">
+                      <b>TEENS NIÑAS (7-16 años)</b>
+                    </li>
+                    <li>CHAQUETAS Y CHALECOS</li>
+                    <li>BUZOS Y TOPS</li>
+                    <li>PANTALONES</li>
+                    <li>ZAPATOS</li>
+                    <li>ACCESORIOS</li>
+                  </ul>
+                  <ul>
+                    <li className="bold-sub-category">
+                      <b>TEENS NIÑOS (7-16 años)</b>
+                    </li>
+                    <li>CHAQUETAS Y CHALECOS</li>
+                    <li>BUZOS Y TOPS</li>
+                    <li>CAMISETAS</li>
+                    <li>PANTALONES</li>
+                    <li>ZAPATOS</li>
+                    <li>ACCESORIOS</li>
+                  </ul>
+                  <ul>
+                    <li className="bold-sub-category">
+                      <b>BEBÉS NIÑOS (0-6 años)</b>
+                    </li>
+                    <li>BEBÉS (0-2 AÑOS)</li>
+                    <li>NIÑOS (2-6 AÑOS)</li>
+                  </ul>
+                </div>
+              </ul>
+              {/*accesorios y equipamento*/}
+
+              <ul className="categories-dropdown">
+                <li className="category">ACCESORIOS Y EQUIPAMENTO</li>
+
+                <div className="dropdown">
+                  <ul>
+                    <li className="bold-sub-category">
+                      <b>CAMPING</b>
+                    </li>
+                    <li>CARPAS</li>
+                    <li>SACOS DE DORMIR</li>
+                  </ul>
+                  <ul>
+                    <li className="bold-sub-category">
+                      <b>EQUIPAJE YU MORRALES</b>
+                    </li>
+                    <li>MORRALES</li>
+                    <li>ESCOLARES</li>
+                    <li>EXCURSIONISMO</li>
+                  </ul>
+                  <ul>
+                    <li className="bold-sub-category">
+                      <b>ACCESORIOS</b>
+                    </li>
+                    <li>BOLSOS Y RIÑONERAS</li>
+                    <li>CUELLOS Y BUFANDAS</li>
+                    <li>GORRAS Y GORROS</li>
+                    <li>GUANTES</li>
+                  </ul>
+                </div>
+              </ul>
+              <ul className="categories-dropdown">
+                <li className="category">TECNOLOGIAS</li>
+
+                <div className="dropdown">
+                  <ul>
+                    <li className="bold-sub-category">
+                      <b>INNOVACION</b>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li className="bold-sub-category">
+                      <b>SOSTENIBILIDAD</b>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li className="bold-sub-category">
+                      <b>VECTIV</b>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li className="bold-sub-category">
+                      <b>FUTURELIGHT</b>
+                    </li>
+                  </ul>
+                </div>
+              </ul>
+              <ul className="categories-dropdown">
+                <li className="category">NUEVA COLECCION</li>
+              </ul>
+              <ul className="categories-dropdown">
+                <li className="category">SALE</li>
               </ul>
             </ul>
           </li>
