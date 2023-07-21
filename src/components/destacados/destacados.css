@@ -1,0 +1,122 @@
+@import url("../../variables.css");
+
+
+#main-destacados {
+
+    font-family: var(--font-nav);
+}
+
+#title-destacados {
+    font-size: 30px;
+    letter-spacing: -0.25px;
+    text-align: center;
+
+}
+
+#flex-destacado {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+
+
+}
+
+
+
+.destacado-item {
+    margin-top: 3rem;
+
+    position: relative;
+    font-weight: bolder;
+    width: 32%;
+    font-size: 12px;
+    padding-bottom: 1rem;
+
+}
+
+.destacado-item:hover {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+}
+
+
+.discount,
+.buy {
+    position: absolute;
+    color: var(--font-color-red);
+    text-align: center;
+
+}
+
+.discount {
+    border: 1px var(--font-color-red) solid;
+    padding: 5px;
+    right: 20px;
+    top: 20px;
+}
+
+.buy {
+
+    color: white;
+    background-color: red;
+    width: 100px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    margin-left: -40px;
+    opacity: 0;
+
+
+}
+
+.buy:hover {
+
+    background-color: black;
+    color: white;
+    transition: 0.2s;
+
+}
+
+.destacado-item:hover>.buy {
+    opacity: 1;
+
+    transition: 0.2s;
+
+}
+
+.destacado-item img {
+    width: 100%;
+}
+
+.info {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.item-name {
+    text-align: center;
+}
+
+.price {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 1rem;
+}
+
+.before {
+    color: var(--font-color-gray);
+    text-decoration: line-through;
+    text-decoration-color: var(--font-color-gray);
+    text-decoration-thickness: 2px;
+}
+
+.after {
+    color: var(--font-color-red);
+}

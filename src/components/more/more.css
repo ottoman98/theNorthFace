@@ -1,0 +1,29 @@
+#more {
+    position: relative;
+}
+
+#more img {
+    width: 100%;
+
+}
+
+#more div {
+    position: absolute;
+    background-color: black;
+    color: white;
+    min-width: 6rem;
+    top: 50%;
+    left: 10%;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 10px 100px;
+    border-radius: 5px;
+    border: 2px white solid;
+
+}
+
+#more div:hover {
+    background-color: white;
+    color: black;
+    border: 2px black solid
+}
