@@ -1,0 +1,75 @@
+@import url("../../variables.css");
+
+footer {
+    border-top: 1px solid black;
+    padding: 20px;
+    font-size: 10px;
+}
+
+#upper {
+    display: flex;
+
+    justify-content: space-around;
+
+}
+
+#upper ul {
+    list-style: none;
+    line-height: 1.3rem;
+}
+
+#upper b {
+    font-family: var(--font-nav);
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-media img {
+    width: 31px;
+}
+
+
+#lower {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.legal {
+    width: 60%;
+}
+
+.methods {
+    width: 550px;
+}
+
+.super {
+    width: 200px;
+
+}
+
+
+.off {
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.form {
+    width: 40%;
+    margin-top: -40px;
+
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 10px;
+
+}
+
+.agreement {}

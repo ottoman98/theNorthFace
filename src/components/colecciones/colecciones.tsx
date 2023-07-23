@@ -4,8 +4,26 @@ import hombre from "../../images/hombre.png";
 function Colecciones() {
   return (
     <>
-      <img src={mujer} alt="" />
-      <img src={hombre} alt="" />
+      <div id="colecciones">
+        <h2>COLECCIONES</h2>
+        <div>
+          <div className="img-div">
+            <img src={mujer} alt="" />
+            <div className="text">
+              <span>SHE</span>
+              <span>EXPLORES</span>
+            </div>
+          </div>
+          <div className="img-div">
+            <img src={hombre} alt="" />
+
+            <div className="text">
+              <span>HE</span>
+              <span>EXPLORES</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 }

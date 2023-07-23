@@ -1,0 +1,40 @@
+#colecciones {
+    padding: 20px;
+}
+
+#colecciones h2 {
+    text-align: center;
+}
+
+#colecciones div {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.img-div {
+    position: relative;
+}
+
+.img-div img {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+.text {
+    position: absolute;
+    flex-direction: column;
+    display: flex;
+    color: white;
+    top: 0;
+    bottom: 0;
+    align-items: center;
+}
+
+.text span {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bolder;
+}
